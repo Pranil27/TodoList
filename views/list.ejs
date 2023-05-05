@@ -2,29 +2,63 @@
 
 
   <body>
+
+      <main class="me-auto">
+        <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/logout">Logout</a>
+  <a href="/todo">Home</a>
+  <% for(let i=1;i<xyz.length;i++){ %>
+  <% if( xyz[i].name =="Favicon.ico") continue; %>
+    <a href="/<%= xyz[i].name %>"><%= xyz[i].name %></a>
+  <% } %>
+<!-- <a href="/newList">    <input type="text" name="newL" placeholder="New List" autocomplete="off" > </a> -->
+<form class="item" action="/neww" method="post">
+  <input type="text" name="newList" placeholder="New List" autocomplete="off" >
+  <button type="submit" >+</button>
+</form>
+</div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </main>
+
+
+
     <div class="box" id="heading">
+
       <h1><%= listTitles  %></h1>
     </div>
 
    <div class="box">
 
 
-      <% for(var i=0;i<newListItem.length;i++){ %>
+      <% newListItem.forEach(function(ele){ %>
+        <form action="/delete" method="post">
         <div class="item">
-          <input type="checkbox" >
-           <p><%= newListItem[i] %></p>
+          <input type="checkbox" onChange="this.form.submit()" value="<%= ele._id %>" name="checkbox">
+           <p><%= ele.name %></p>
         </div>
+        <input type="hidden" name="listName" value="<%= listTitles %>">
+        </form>
+      <% }); %>
 
-      <% } %>
-
-      <form class="item" action="/" method="post">
+      <form class="item" action="/todo" method="post">
         <input type="text" name="newItem" placeholder="New Item" autocomplete="off" >
-        <button type="submit" name="button" value="<%= listTitles %>">+</button>
+        <button type="submit" name="list" value="<%= listTitles %>">+</button>
       </form>
+
+
 
    </div>
 
+   <script>
+   function openNav() {
+     document.getElementById("mySidenav").style.width = "250px";
+   }
 
+   function closeNav() {
+     document.getElementById("mySidenav").style.width = "0";
+   }
+   </script>
 
 
   </body>
