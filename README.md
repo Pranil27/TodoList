@@ -1,5 +1,5 @@
 # TodoList
-A Todolist app where one can mention all the tasks to be completed within a day.
+A website for maintaining the list of tasks to be completed by an individual.
 
 TECH STACK :  HTML , CSS , JavaScript ,
               NodeJs , Express , MongoDB 
