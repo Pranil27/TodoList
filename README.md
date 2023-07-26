@@ -18,7 +18,7 @@ TECH STACK :  HTML , CSS , JavaScript ,
 
 			 
 
-FEATURES OF THE WEBSITE  : 
+# FEATURES OF THE WEBSITE  : 
 
 -->  It consist of user login and signup.
 
@@ -28,7 +28,7 @@ FEATURES OF THE WEBSITE  :
 
 for all different types of task in separate lists and not messing up everything in a single list
 
-STEPS TO RUN THE WEBSITE  :
+# STEPS TO RUN THE WEBSITE  :
 
 -->  Download the zip folder 
 
