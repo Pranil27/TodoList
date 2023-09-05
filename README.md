@@ -43,9 +43,9 @@ STEPS TO RUN THE WEBSITE  :
 
 # Screenshots
 
-https://user-images.githubusercontent.com/97393040/265725125-a0dced0c-dd37-46a2-bd8d-923813b45ad2.png
+![Alt text] (https://user-images.githubusercontent.com/97393040/265725125-a0dced0c-dd37-46a2-bd8d-923813b45ad2.png)
 
-https://user-images.githubusercontent.com/97393040/265725246-35761a76-8005-4a63-bd64-ce5c56695c2e.png
+![Alt text] (https://user-images.githubusercontent.com/97393040/265725246-35761a76-8005-4a63-bd64-ce5c56695c2e.png)
 
-https://user-images.githubusercontent.com/97393040/265725303-cd7dc3ef-f172-4206-bbd9-1dfda0200a24.png
+![Alt text] (https://user-images.githubusercontent.com/97393040/265725303-cd7dc3ef-f172-4206-bbd9-1dfda0200a24.png)
 
